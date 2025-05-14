@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Formulario de Contacto
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        include header.pug    
+
+        main
+            h1 Formulario de Contacto
+
+            form(action="/send-message" method="POST")
+                div
+                    label(for="name") Nombre:
+                    input(type="text" id="name" name="name" required)
+                div
+                    label(for="email") Correo Electrónico:
+                    input(type="email" id="email" name="email" required)
+                div
+                    label(for="message") Mensaje:
+                    textarea(id="message" name="message" rows="5" required)
+                div
+                    button(type="submit") Enviar
+
+        include footer.pug

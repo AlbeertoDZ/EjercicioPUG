@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+        title EjercicioPUG
+        
+    body
+        include ./header.pug
+
+        main
+            h1 Aquí tienes la pagina de bienvenida
+            section
+                    article
+                        h2 Este es un ejercicio de prueba
+                        p Bienvenido a nuestra página de inicio, donde los sueños se hacen realidad y los niños no lloran. 
+                        p Aquí encontrarás contenido tan interesante que incluso tu gato querrá leerlo contigo. 
+                        p Si has llegado hasta aquí, felicidades! Eres el visitande 1 millon! Clicka en este enlace para obtener un premio fabuloso! 
+                        a(href="https://youtu.be/3ILscTrJrY4", target="_blank") Clicka aqui!
+
+        include ./footer.pug
+        script(src="/js/script.js") 
